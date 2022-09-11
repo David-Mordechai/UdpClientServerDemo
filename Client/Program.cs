@@ -19,5 +19,5 @@ while (cts.Token.IsCancellationRequested is false)
     var data = Encoding.ASCII.GetBytes(message);
     client.Send(data, data.Length);
     Console.WriteLine($"message was sent to [{endPoint.Address}:{endPoint.Port}] - {message}");
-    Thread.Sleep(2000);
+    await Task.Delay(2000);
 }
