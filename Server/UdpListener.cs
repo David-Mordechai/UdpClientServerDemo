@@ -21,9 +21,9 @@ public class UdpListener
 
     public class ReceivedDataArgs
     {
-        public IPAddress? IpAddress { get; init; }
-        public int Port { get; init; }
-        public byte[] ReceivedBytes { get; init; }
+        public IPAddress? IpAddress { get; }
+        public int Port { get; }
+        public byte[] ReceivedBytes { get; }
 
         public ReceivedDataArgs(IPAddress? ipAddress, int port, byte[] data)
         {
